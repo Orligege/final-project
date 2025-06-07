@@ -397,7 +397,7 @@ img {
   width: 100%;
   display: flex;justify-content:space-between;
   align-items: center;
-  padding:80px 312px ;
+  padding:80px 280px ;
   flex-wrap: wrap;
   gap: 20px;
 }
