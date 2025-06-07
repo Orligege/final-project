@@ -411,11 +411,7 @@ display: flex;
 flex-wrap: wrap;
 gap: 16px;
 }
-@media (max-width: 1240px) {
-  .contact {
-    padding: 80px 80px;
-  }
-}
+
 @media (max-width: 992px){
   .contact{
     flex-direction: column;
