@@ -67,11 +67,12 @@ img {
 
 .wrap {
   margin: 0 auto;
-  max-width: 1920px;
   /*border: 1px solid #000;*/
 }
 
 .header {
+  max-width: 1296px;
+  margin: 0 auto;
   width: 100%;
   padding: 24px 0px;
 }
@@ -216,7 +217,15 @@ img {
   max-width: 640px;
 }
 
+.blog-btn1 {
+  width: 100px;
+  padding: 8px 16px;
+  color: #4B4B4B;
+  border: 1px solid #4B4B4B;
+  border-radius: 40px;
+}
 .blog-btn {
+  display: inline-block
   width: 100px;
   padding: 8px 16px;
   color: #4B4B4B;
@@ -226,14 +235,15 @@ img {
 
 
 .search {
-  margin:10px 200px ;
+  margin:10px 16px ;
   display: flex;
+  width: calc(100%-32px);
   max-width: 416px;
   height: 56px;
   border: 1px solid #4B4B4B;
   border-radius: 40px;
   gap: 10px;
-  padding: 16px 48px 16px 16px;
+  padding:16px 16px;
 }
 .search img{
   width:24px;
@@ -245,6 +255,13 @@ img {
   font-size: 16px;
   color: #4B4B4B;
   background-color: transparent;
+}
+@media (max-width: 445px) {
+  .search {
+    padding: 12px;
+    margin: 10px 12px;
+    width: calc(100% - 24px);
+  }
 }
 
 .article{
@@ -344,25 +361,45 @@ img {
 .contact{
   width: 100%;
   display: flex;justify-content:space-between;
+  align-items: center;
   padding:80px 312px ;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .contact p{
   font-size: 32px;
+  word-break: break-word;
 }
 .contact ul{
 display: flex;
+flex-wrap: wrap;
+gap: 16px;
+}
+@media (max-width: 1240px) {
+  .contact {
+    padding: 80px 80px;
+  }
 }
 @media (max-width: 992px){
   .contact{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px 40px;
+  }
+  .contact ul {
+    justify-content: center;
   }
 }
-@media (max-width: 768px){
-  .contact p{
-    font-size: 28px;
+@media (max-width: 610px) {
+  .contact {
+    padding: 40px 16px;
+  }
+
+  .contact p {
+    font-size: 24px;
+    text-align: center;
   }
 }
 .footer{
